@@ -1,0 +1,54 @@
+.expense-edit__controls {
+	display: grid;
+	gap: 0.5rem;
+	grid-auto-flow: row;
+	margin-left: 0.5rem;
+}
+
+.editBtn, .cancelBtn, .submitBtn, .deleteBtn {
+	border: 0.0625rem solid #fff;
+	border-radius: 0.75rem;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.5rem;
+}
+
+.editBtn {
+	background-color: #a3800d3d;
+}
+
+.editBtn:hover {
+	background-color: #a3800d;
+}
+
+.cancelBtn {
+	background-color: #2727293d;
+}
+
+.cancelBtn:hover {
+	background-color: #272729;
+}
+
+.submitBtn {
+	background-color: #085d003d;
+}
+
+.submitBtn:hover {
+	background-color: #085d00;
+}
+
+.deleteBtn {
+	background-color: #e029293d;
+}
+
+.deleteBtn:hover {
+	background-color: #b10c0c;
+}
+
+@media (min-width: 36.25rem) {
+	.expense-edit__controls {
+		grid-auto-flow: column;
+	}
+}

@@ -1,0 +1,15 @@
+header {
+	background-color: #1f1f1f;
+	border: 0.2rem solid #fff;
+	border-radius: 0.75rem;
+	height: 4rem;
+	margin: 2rem auto;
+	padding: 0.6rem;
+	width: 21rem;
+}
+header h1 {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+}

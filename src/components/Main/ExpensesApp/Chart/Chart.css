@@ -1,0 +1,30 @@
+.chart {
+	background-color: #f8dfff;
+	border-radius: 0.75rem;
+	display: flex;
+	height: 10rem;
+	justify-content: space-around;
+	padding: 1rem;
+	text-align: center;
+}
+
+@keyframes showChart {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes hideChart {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}

@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+	background-color: #3f3f3f;
+	display: grid;
+	grid-template-rows: 6rem 6fr 4rem;
+	margin: auto;
+	min-height: 100vh;
+}

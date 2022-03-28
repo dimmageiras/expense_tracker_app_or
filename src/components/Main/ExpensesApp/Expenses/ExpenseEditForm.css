@@ -1,0 +1,26 @@
+.expense-edit {
+	align-items: center;
+	background-color: #4b4b4b;
+	display: flex;
+	flex-direction: row;
+	height: 6.5rem;
+	justify-content: space-between;
+	margin: 1rem auto;
+	padding: 0.5rem;
+}
+
+.expense-edit__description input {
+	margin: 0.5rem 0.5rem;
+	max-width: 4rem;
+}
+
+@media (min-width: 36.25rem) {
+	.expense-edit__description {
+		margin: 1rem 0;
+	}
+
+	.expense-edit__description input {
+		margin: 1rem 0.5rem 1rem 0.5rem;
+		max-width: 100%;
+	}
+}

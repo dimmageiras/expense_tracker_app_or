@@ -1,0 +1,49 @@
+.chart-bar {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.chart-bar__inner {
+	background-color: #c3b4f3;
+	border: 0.0625rem solid #313131;
+	border-radius: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: flex-end;
+	overflow: hidden;
+	width: 1rem;
+}
+
+.chart-bar__inner:focus {
+	outline-color: #4826b9;
+	outline-width: 0.1rem;
+}
+
+.chart-bar__inner[text]:hover::after,
+.chart-bar__inner[text]:focus::after {
+	background-color: #40005d;
+	border: 0.0625rem solid #fff;
+	border-radius: 0.75rem;
+	color: #fff;
+	content: attr(text);
+	font-size: 0.8rem;
+	margin: -2rem 0 2rem -2.75rem;
+	padding: 0.3125rem 0.625rem;
+	position: absolute;
+	width: 5rem;
+}
+
+.chart-bar__fill {
+	background-color: #4826b9;
+	transition: all 0.3s ease-out;
+	width: 100%;
+}
+
+.chart-bar__label {
+	font-size: 0.5rem;
+	font-weight: bold;
+	text-align: center;
+}

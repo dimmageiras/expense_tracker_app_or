@@ -13,7 +13,7 @@ const monthsShort = Array.from({length: 12}, (item, i) => {
 
 const yyyy = date => newDate(date).getFullYear();
 
-const yyyymmdd = date => `${yyyy(date)} - ${mm(date)} - ${dd(date)}`;
+const yyyymmdd = date => `${yyyy(date)}-${mm(date)}-${dd(date)}`;
 
 const currentDay = yyyymmdd(newDate());
 

@@ -10,8 +10,8 @@ const NewExpense = props => {
 		const expenseData = {id: nanoid(), ...enteredExpenseData};
 		props.onAddExpense(expenseData);
 	};
-	const handleEdit = boolean => {
-		boolean ? setIsEditing(true) : setIsEditing(false);
+	const handleEdit = isEditing => {
+		isEditing ? setIsEditing(true) : setIsEditing(false);
 	};
 	const addExpenseBtn = <button onClick={handleEdit.bind(this, true)}>Add New Expense</button>;
 	const expenseForm = <ExpenseForm onSaveExpenseData={handleSaveExpenseData} onCancel={handleEdit.bind(this, false)} />;

@@ -28,9 +28,8 @@ const ExpensesApp = () => {
 		setExpenses(sortExpensesByDate);
 	};
 	const deleteExpense = expenseID => {
-		const toDelete = new Set([expenseID]);
 		setExpenses(prevExpenses => {
-			const removeExpense = prevExpenses.filter(expense => !toDelete.has(expense.id));
+			const removeExpense = prevExpenses.filter(expense => expense.id !== expenseID);
 			saveToLocalStorage(removeExpense);
 			return removeExpense;
 		});
